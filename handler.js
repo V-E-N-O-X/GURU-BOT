@@ -526,8 +526,8 @@ export async function participantsUpdate({ id, participants, action }) {
             ppgp = await this.profilePictureUrl(id, 'image')
           } catch (error) {
             console.error(`Error retrieving profile picture: ${error}`)
-            pp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
-            ppgp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
+            pp = 'https://i.ibb.co/G35jn3J/bot2p.jpg' // Assign default image URL
+            ppgp = 'https://i.ibb.co/G35jn3J/bot2p.jpg' // Assign default image URL
           } finally {
             let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user')
               .replace('@group', await this.getName(id))
@@ -544,7 +544,7 @@ export async function participantsUpdate({ id, participants, action }) {
             )}&memberCount=${encodeURIComponent(
               nthMember.toString()
             )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-              'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
+              'https://i.ibb.co/PhN3K9V/images-1.jpg'
             )}`
 
             try {
@@ -556,10 +556,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
-                    body: 'welcome to Group',
+                    title: 'ⁱʳⁱˢ ᵇᵃⁱˡᵉʸˢ ᵐᵈ',
+                    body: '🌈 YT: Venox',
                     thumbnailUrl: welcomeApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://gg.gg/irisbotz',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -583,8 +583,8 @@ export async function participantsUpdate({ id, participants, action }) {
             ppgp = await this.profilePictureUrl(id, 'image')
           } catch (error) {
             console.error(`Error retrieving profile picture: ${error}`)
-            pp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
-            ppgp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
+            pp = 'https://i.ibb.co/G35jn3J/bot2p.jpg' // Assign default image URL
+            ppgp = 'https://i.ibb.co/G35jn3J/bot2p.jpg' // Assign default image URL
           } finally {
             let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user').replace(
               '@user',
@@ -601,7 +601,7 @@ export async function participantsUpdate({ id, participants, action }) {
             )}&memberCount=${encodeURIComponent(
               nthMember.toString()
             )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-              'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
+              'https://i.ibb.co/PhN3K9V/images-1.jpg'
             )}`
 
             try {
@@ -613,10 +613,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
-                    body: 'Goodbye from  Group',
+                    title: 'ⁱʳⁱˢ ᵇᵃⁱˡᵉʸˢ ᵐᵈ',
+                    body: '🌈 YT: Venox',
                     thumbnailUrl: leaveApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://gg.gg/irisbotz',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -858,29 +858,29 @@ global.dfail = (type, m, conn) => {
   }
 
   const msg = {
-    owner: `*${emoji.owner} Owner's Query*\n
-    ${userTag} This command can only be used by the *Bot Owner*!`,
-    moderator: `*${emoji.moderator} Moderator's Query*\n
-    ${userTag} This command can only be used by *Moderators*!`,
-    premium: `*${emoji.premium} Premium Query*\n
-    ${userTag} This command is only for *Premium Members*!`,
-    group: `*${emoji.group} Group Query*\n
-    ${userTag} This command can only be used in *Group Chats*!`,
-    private: `*${emoji.private} Private Query*\n
-    ${userTag} This command can only be used in *Private Chats*!`,
-    admin: `*${emoji.admin} Admin's Query*\n
-    ${userTag} This command is only for *Group Admins*!`,
-    botAdmin: `*${emoji.botAdmin} Bot Admin's Query*\n
-    ${userTag} Make the bot an *Admin* to use this command!`,
-    unreg: `*${emoji.unreg} Registration Query*\n
-    ${userTag} Please register to use this feature by typing:\n\n*#register name.age*\n\nExample: *#register ${m.name}.18*!`,
-    nsfw: `*${emoji.nsfw} NSFW Query*\n
-    ${userTag} NSFW is not active. Please contact the Group admin to enable this feature!`,
-    restrict: `*${emoji.restrict} Inactive Feature Query*\n
-    ${userTag} This feature is *disabled*!`,
-  }[type]
-  if (msg) return m.reply(msg)
-}
+    owner: `👑 *Owner's Query* 👑\n
+    ${userTag}, only the *Bot Owner* can execute this command!`,
+    moderator: `🛡️ *Moderator's Query* 🛡️\n
+    ${userTag}, this command is reserved for *Moderators*!`,
+    premium: `💎 *Premium Query* 💎\n
+    ${userTag}, exclusive to *Premium Members*!`,
+    group: `👥 *Group Query* 👥\n
+    ${userTag}, use this command in *Group Chats* only!`,
+    private: `🔒 *Private Query* 🔒\n
+    ${userTag}, this command is for *Private Chats* only!`,
+    admin: `👮 *Admin's Query* 👮\n
+    ${userTag}, for *Group Admins* only!`,
+    botAdmin: `🤖 *Bot Admin's Query* 🤖\n
+    ${userTag}, the bot needs to be made an *Admin* to execute this command!`,
+    unreg: `📝 *Registration Query* 📝\n
+    ${userTag}, please register by typing:\n\n*#register name.age*\n\nExample: *#register ${m.name}.18*!`,
+    nsfw: `🔞 *NSFW Query* 🔞\n
+    ${userTag}, NSFW is not enabled. Contact the Group admin to activate this feature!`,
+    restrict: `🚫 *Inactive Feature Query* 🚫\n
+    ${userTag}, this feature is currently *disabled*!`,
+}[type];
+if (msg) return m.reply(msg);
+
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
